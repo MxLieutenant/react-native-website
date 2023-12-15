@@ -1,33 +1,4 @@
----
-id: environment-setup
-title: Setting up the development environment
-hide_table_of_contents: true
----
 
-import Tabs from '@theme/Tabs'; import TabItem from '@theme/TabItem'; import constants from '@site/core/TabsConstants';
-
-import GuideLinuxAndroid from './\_getting-started-linux-android.md'; import GuideMacOSAndroid from './\_getting-started-macos-android.md'; import GuideWindowsAndroid from './\_getting-started-windows-android.md'; import GuideMacOSIOS from './\_getting-started-macos-ios.md';
-
-This page will help you install and build your first React Native app.
-
-**If you are new to mobile development**, the easiest way to get started is with Expo Go. Expo is a set of tools and services built around React Native and, while it has many [features](https://docs.expo.dev), the most relevant feature for us right now is that it can get you writing a React Native app within minutes. You will only need a recent version of Node.js and a phone or emulator. If you'd like to try out React Native directly in your web browser before installing any tools, you can try out [Snack](https://snack.expo.dev/).
-
-**If you are already familiar with mobile development**, you may want to use React Native CLI. It requires Xcode or Android Studio to get started. If you already have one of these tools installed, you should be able to get up and running within a few minutes. If they are not installed, you should expect to spend about an hour installing and configuring them.
-
-<Tabs groupId="guide" queryString defaultValue={constants.defaultGuide} values={constants.guides}>
-<TabItem value="quickstart">
-
-Run the following command to create a new React Native project called "AwesomeProject":
-
-<Tabs groupId="package-manager" queryString defaultValue={constants.defaultPackageManager} values={constants.packageManagers}>
-<TabItem value="npm">
-
-```shell
-npx create-expo-app AwesomeProject
-
-cd AwesomeProject
-npx expo start
-```
 
 </TabItem>
 <TabItem value="yarn">
